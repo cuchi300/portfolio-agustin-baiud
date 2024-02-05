@@ -39,4 +39,4 @@ exports.css = css;
 exports.imagenes = imagenes;
 exports.dev = dev;
 exports.cssbuild = cssbuild;
-exports.default = series( css, dev, cssbuild);
+exports.default = series( css, dev);

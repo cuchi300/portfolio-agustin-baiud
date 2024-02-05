@@ -54,10 +54,12 @@ p{
 // card
 $card-border-color: #484545a1;
 
-// input
+// Form
 $input-bg: #363737;
 $form-label-color: #777777;
 $input-placeholder-color: #777777;
-$input-focus-width: 0;
+$input-color: #777777;
+$focus-ring-color: #777777;
+$input-font-size: 1.4rem;
 
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
