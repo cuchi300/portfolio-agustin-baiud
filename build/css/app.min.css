@@ -2099,10 +2099,6 @@ textarea.form-control {
   color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
 }
 
-.rounded {
-  border-radius: var(--bs-border-radius) !important;
-}
-
 .rounded-1 {
   border-radius: var(--bs-border-radius-sm) !important;
 }
