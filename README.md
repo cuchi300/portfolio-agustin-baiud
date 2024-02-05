@@ -1,0 +1,1 @@
+Hola!! Bueno aca te dejo lo que es mi portfolio personal, te comento un poco de que va, el proyecto esta finalizado. Esta echo con Bootstrap y tiene algunos que otros efectos con JavaScript. La idea mas es meterl PHP y SQL para el formulario. Espero que te guste y nada. Dejale un like al repo!!. Saludos
