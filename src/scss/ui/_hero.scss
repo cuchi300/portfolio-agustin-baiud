@@ -1,0 +1,76 @@
+@use '../customs' as *;
+@use '../base/mixins' as m;
+
+.hero{
+    padding-top: 30rem;
+    padding-bottom: 10rem;
+    overflow: hidden;
+    @include media-breakpoint-up(md){
+        padding-top: 30rem;
+    }
+    @include media-breakpoint-up(lg){
+        padding-top: 18.5rem;
+    }
+    &__contenido{
+        position: relative;
+        z-index: 8;
+        margin-bottom: 8rem;
+        @include media-breakpoint-up(md){
+            margin-bottom: 0;
+        }
+    }
+    &__heading{
+        font-size: 5rem;
+    }
+    &__parrafo{
+        font-size: 2.5rem;
+    }
+    &__btn{
+        @include m.btnOutline;
+    }
+    
+    &__picture{
+        position: relative;
+        padding-top: 5rem;
+        @include media-breakpoint-up(md){
+            padding-top: 0;
+        }
+    }
+    &__imagen{
+        background-image: url(../img/yo-traje.jpg);
+        background-size: cover;
+        background-position: -14rem -9rem;
+        background-size: 193%;
+        background-repeat: no-repeat;
+        height: 30rem;
+        width: 30rem;
+        position: relative;
+        z-index: 3;
+        margin: 0 auto;
+        @include media-breakpoint-up(md){
+            height: 35rem;
+            width: 35rem;
+            background-position: -17rem -9rem;
+        }
+    }
+    &__svg{
+        position: absolute;
+        z-index: 2;
+        opacity: 0.3;
+        top: -187px;
+        left: -221px;
+        width: 85rem;
+        transform: rotate(-8deg);
+        @include media-breakpoint-up(md){
+            top: -193px;
+            left: -194px;
+        }
+    }
+    &__lenguaje{
+        @include m.btnOutline;
+        border: none;
+        background-color: transparent;
+        padding: .5rem;
+        font-size: 2.2rem;
+    }
+}

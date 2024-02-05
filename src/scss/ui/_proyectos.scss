@@ -1,0 +1,16 @@
+@use '../customs' as *;
+@use 'base/mixins' as m;
+
+.proyectos{
+
+    &__heading{
+        @include m.heading;
+    }
+    &__img{
+        height: 25rem;
+        object-fit: cover;
+    }
+    &__btn{
+        @include m.btnOutline;
+    }
+}
