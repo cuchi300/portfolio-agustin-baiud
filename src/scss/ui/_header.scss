@@ -5,6 +5,14 @@
     z-index: 10;
     &__heading{
         font-size: 3rem;
+        position: relative;
+        &::after{
+            content: 'Miguel Agustin Baiud';
+            position: absolute;
+            bottom: 5px;
+            right: -14rem;
+            font-size: 1.2rem;
+        }
         @include media-breakpoint-up(md){
             font-size: 3.5rem;
         }

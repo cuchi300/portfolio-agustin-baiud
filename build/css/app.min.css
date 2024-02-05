@@ -2213,6 +2213,14 @@ textarea.form-control {
 }
 .header__heading {
   font-size: 3rem;
+  position: relative;
+}
+.header__heading::after {
+  content: "Miguel Agustin Baiud";
+  position: absolute;
+  bottom: 5px;
+  right: -14rem;
+  font-size: 1.2rem;
 }
 @media (min-width: 768px) {
   .header__heading {
