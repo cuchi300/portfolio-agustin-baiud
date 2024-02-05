@@ -7,11 +7,14 @@
     <!-- Prefetch -->
     <!-- cargar la siguiente pagina que el usuario visite mas rapido -->
     <!-- con google analytics podemos saber en que pagina las personas pasan mas tiempo y asi colocar prefetch a esa pagina asi carga mas rapido, para sitios web que tengan mas de dos paginas -->
-    <link rel="prefetch" href="ingles.html" as="document">
-    <!-- Preload que hoja de estilo carga con mayor prioridad -->
+    <link rel="prefetch" href="index.html" as="document">
+
+    <!-- Preload -->
+    <!-- que hoja de estilo carga con mayor prioridad -->
     <!-- Bootstrap icons -->
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" as="style">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
     <!-- Font google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +27,7 @@
     <link rel="stylesheet" href="build/css/app.min.css">
 </head>
 <body>
-    <header class="header py-4 position-fixed w-100">
+    <header class="header py-4 position-fixed w-100" id="header">
         <div class="container-xl">
             <div class="row">
                 <nav class="header__nav navbar navbar-expand-lg">
@@ -38,19 +41,19 @@
                         <div class="collapse navbar-collapse justify-content-end py-5 py-md-0" id="navbarToggle">
                             <ul class="navbar-nav header__list text-center">
                                 <li class="nav-item me-0 me-md-5">
-                                    <a href="#hero" class="nav-link">Inicio</a>
+                                    <a href="#hero" class="nav-link">Home</a>
                                 </li>
                                 <li class="nav-item me-0 me-md-5">
-                                    <a href="#about" class="nav-link">Acerca de Mi</a>
+                                    <a href="#about" class="nav-link">About Me</a>
                                 </li>
                                 <li class="nav-item me-0 me-md-5">
-                                    <a href="#servicios" class="nav-link">Servicios</a>
+                                    <a href="#servicios" class="nav-link">Service</a>
                                 </li>
                                 <li class="nav-item me-0 me-md-5">
-                                    <a href="#proyectos" class="nav-link">Proyectos</a>
+                                    <a href="#proyectos" class="nav-link">Projects</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#contacto" class="nav-link">Contacto</a>
+                                    <a href="#contacto" class="nav-link">Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -64,14 +67,14 @@
         <div class="container-xl">
             <div class="row align-items-center">
                 <div class="col-12 col-md-6 text-white hero__contenido">
-                    <h2 class="fw-bold mb-5 hero__heading">Soy Agustin</h2>
-                    <h1 class="mb-3 text-secondary hero__parrafo">Diseñador y Desarrollador Web Front End</h1>
+                    <h2 class="fw-bold mb-5 hero__heading">I'm Agustin</h2>
+                    <h1 class="mb-3 text-secondary hero__parrafo">Front End Web Designer and Developer</h1>
                     <span class="fs-3 pb-3 text-primary fw-bold" id="typed"></span>
                     <p class="fs-4 pb-3">
                         <i class="fs-3 bi bi-geo-alt"></i>
                         <i class="fs-5">Jujuy, Argentina</i>
                     </p>
-                    <a href="https://api.whatsapp.com/send?phone=1162173874&text=Hola!%20tengo%20un%20proyecto%20web%20en%20mente..." class="hero__btn btn">Contratame</a>
+                    <a href="https://api.whatsapp.com/send?phone=1162173874&text=Hola!%20tengo%20un%20proyecto%20web%20en%20mente..." class="hero__btn btn">Hire me</a>
                     <div class="d-flex gap-3 hero__botones mt-5">
                         <a class="hero__lenguaje" href="ingles.html">ENG</a>
                         <a class="hero__lenguaje" href="index.html">SPA</a>
@@ -81,7 +84,7 @@
                     <div class="hero__imagen rounded-circle"></div>
                     <svg class="hero__svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                         <path fill="#feb633" d="M33.1,-54.2C43.1,-51.6,51.5,-43.1,61.9,-33.1C72.2,-23.1,84.4,-11.5,83.5,-0.5C82.6,10.5,68.6,21,56.6,28.1C44.6,35.2,34.6,38.9,25.5,46C16.4,53,8.2,63.5,-2,66.9C-12.1,70.3,-24.3,66.7,-28.3,56.7C-32.4,46.7,-28.4,30.4,-25.3,19.9C-22.2,9.4,-20.1,4.7,-20.4,-0.2C-20.7,-5.1,-23.5,-10.1,-28.4,-23.9C-33.4,-37.6,-40.5,-60,-36.1,-65.8C-31.7,-71.7,-15.9,-60.8,-2.2,-57.1C11.6,-53.4,23.1,-56.7,33.1,-54.2Z" transform="translate(100 100)" />
-                    </svg>
+                      </svg>
                 </div>
             </div>
         </div>
@@ -89,34 +92,34 @@
 
     <section class="about pt-5" id="about">
         <div class="container-xl">
-            <div class="row text-white py-5 my-5">
+            <div class="row text-white py-5 my-5 d-flex">
                 <h2 class="text-center about__heading z-3 pt-5 mb-5 d-md-none d-block">About Me</h2>
                 <div class="col-12 col-md-5 about__bg text-center pe-md-5 order-2 order-md-0">
                     <h2 class="text-start about__heading z-3 pt-5 mb-5 d-md-block d-none">About Me</h2>
                     <figure class="figure pt-5">
                         <img src="build/img/yo.jpg" class="figure-img img-fluid rounded" loading="lazy" alt="yo trabajando">
-                        <figcaption class="text-white text-md-start pt-3 figure-caption">Yo estudiando en plena pandemia Agosto del 2020</figcaption>
+                        <figcaption class="text-white text-md-start pt-3 figure-caption">Me studying in the middle of the pandemic August 2020</figcaption>
                     </figure>
                 </div>
                 <div class="col-12 col-md-7 pt-5 mt-5 about__box ps-md-5">
-                    <p class="mb-5 fs-5">Tengo 32 años de edad, <i class="text-primary">descubri el Desarrollo web en 2019</i>, una tarde de trabajo cuando miraba videos en internet. La curiosidad sobre esta profesion desperto al ver un video donde <i class="text-primary">creaban una pagina con puro codigo</i> de computadora. Fue asi que empeze a investigar y encontre <i class="text-primary">cursos de Desarrollo Front End</i>, que por si no tenes conocimiento de lo que significa, se especializa en la parte visual de un sitio web. Lo que estas viendo en este momento.</p>
-                    <p class="mb-5 fs-5">A partir de ahi empeze a estudiar esta linda profesion que la verdad es dura, pero a medida que fui aprendiendo nuevas tecnologias y ver mis <i class="text-primary">primeros avances en sitios web</i> que tenia en linea, mis ganas por seguir aprendiendo fueron creciendo aun mas.</p>
-                    <p class="mb-5 fs-5">Si estas leyendo esto, es porque llegue a la instancia de decir que estoy preparado para poder ofrecerte mi conocimientos y poder implementarlos todos en <i class="text-primary">proyectos estaticos</i>para ayudarte a crear un sitio web que se adapte a tus necesidades de negocio y que puedas lograr tu objetivo comercial.</p>
-                    <p class="mb-5 fs-5">Espero con ansias que podamos trabajar juntos en un futuro.</p>
+                    <p class="mb-5 fs-5">I am 32 years old, <i class="text-primary">I discovered Web Development in 2019</i>, one afternoon at work when I was watching videos on the internet. Curiosity about this profession was sparked by watching a video where <i class="text-primary">they created a page with pure computer code</i>. That's how I started researching and found <i class="text-primary">Front End Development courses</i>, which in case you don't know what it means, specializes in the visual part of a website. What you are seeing right now.</p>
+                    <p class="mb-5 fs-5">From there I began to study this beautiful profession that the truth is hard, but as I learned new technologies and saw my <i class="text-primary">first advances in websites</i> that I had online, my desire to continue learning grew even more.</p>
+                    <p class="mb-5 fs-5">If you are reading this, it is because I have come to the point of saying that I am prepared to be able to offer you my knowledge and be able to implement it all in static projects to <i class="text-primary">help you create a website that adapts to your business</i> needs and that you can achieve your commercial objective.</p>
+                    <p class="mb-5 fs-5">I look forward to working together in the future.</p>
                     <blockquote>
                         <cite class="fs-6 fw-bold">Atte: Miguel Agustin Baiud</cite>
                     </blockquote>
                     <div class="d-flex flex-column flex-md-row gap-3 pt-5">
-                        <a href="#" class="about__btn btn py-3 px-5">Mis Trabajos</a>
+                        <a href="#proyectos" class="about__btn btn py-3 px-5">My jobs</a>
                         <a href="file/CV-Miguel-Agustin-Baiud.pdf" class="about__btn btn py-3 px-5 about__btn--edit" download="CV-Agustin-Baiud">Download CV</a>
                     </div>
                 </div>
-            </div> <!-- row -->
+            </div>
 
-            <div class="about__skill text-center pb-5 mb-5">
+            <div class="about__skill text-center py-5 mb-5">
                 <div class="row justify-content-center">
-                    <h2 class="about__heading">Mis Habilidades</h2>
-                    <div class="grid my-5">
+                    <h2 class="about__heading">My Skills</h2>
+                    <div class="grid my-5 py-5">
                         <div class="g-col-6 g-col-md-2 about__icon">
                             <img src="build/img/html-icon.png" class="img-fluid" alt="imagen icono">
                         </div>
@@ -154,29 +157,29 @@
         <div class="container-fluid servicios__container">
             <div class="row py-5 text-center">
                 <div class="col-12">
-                    <h2 class="servicios__heading">Mis servicios</h2>
-                    <p class="py-5 w-75 mx-auto fs-5">Alguno de los servicios que te voy a ofrecer para que tengas la seguridad de que tu pagina va a estar en buenas manos.</p>
+                    <h2 class="servicios__heading">My services</h2>
+                    <p class="py-5 w-75 mx-auto fs-5">Some of the services that I am going to offer you so that you can be sure that your page will be in good hands.</p>
                 </div>
                 <div class="row text-white mx-auto justify-content-center servicios__row text-start">
                     <div class="p-5 rounded-4 servicios__box">
                         <i class="servicios__icon bi bi-braces "></i>
-                        <h3 class=" servicios__h3 servicios__h3--azul fw-bold pb-4 d-inline-block ps-3">Desarrollo Web</h3>
-                        <p class="fs-6">Me encargo de desarrollar tu sitio web con las mejores tecnologias y con codigo legible para que tus sitios web sean de rapido acceso y lo mas importante, que sean accesible ante cualquier publico que se presente en la web.</p>
+                        <h3 class=" servicios__h3 servicios__h3--azul fw-bold pb-4 d-inline-block ps-3">Web development</h3>
+                        <p class="fs-6">I am in charge of developing your website with the best technologies and with readable code so that your websites are quickly accessible and, most importantly, accessible to any public that appears on the web.</p>
                     </div>
                     <div class="p-5 rounded-4 servicios__box">
                         <i class="servicios__icon bi bi-brush "></i>
-                        <h3 class=" servicios__h3 servicios__h3--naranja fw-bold pb-4 d-inline-block ps-3">Diseño Web</h3>
-                        <p class="fs-6">Las paginas web no solo tienen que ser rapidas y accesibles, tambien un diseño atractivo y que llamen mucho la atencion puede ser el centro de atencio con futuros clientes. Traeme tu idea de como queres que sea tu sitio web o dejame que te ayude en busca de ese diseño que te ayude a alcanzar tus objetivos.</p>
+                        <h3 class=" servicios__h3 servicios__h3--naranja fw-bold pb-4 d-inline-block ps-3">Web design</h3>
+                        <p class="fs-6">Websites not only have to be fast and accessible, but also an attractive design that attracts a lot of attention can be the center of attention with future clients. Bring me your idea of ​​what you want your website to be or let me help you find that design that will help you achieve your goals.</p>
                     </div>
                     <div class="p-5 rounded-4 servicios__box">
                         <i class="servicios__icon bi bi-phone "></i>
-                        <h3 class=" servicios__h3 servicios__h3--morado fw-bold pb-4 d-inline-block ps-3">Diseño Responsive</h3>
-                        <p class="fs-6">Tu sitio web siempre tiene que estar adaptado a todos los dispositivos moviles, ya que el 100% de las personas hoy en dia se manejan por celular. Yo voya encargarme de que tu sitio se vea lo mejor posible en un dispositivo movil, y de rapido acceso para que tu clientes nunca abandonen tu pagina web.</p>
+                        <h3 class=" servicios__h3 servicios__h3--morado fw-bold pb-4 d-inline-block ps-3">Responsive Design</h3>
+                        <p class="fs-6">Your website always has to be adapted to all mobile devices, since 100% of people today use cell phones. I will make sure that your site looks as good as possible on a mobile device, and is quickly accessible so that your customers never leave your website.</p>
                     </div>
                     <div class="p-5 rounded-4 servicios__box">
                         <i class="servicios__icon bi bi-graph-up "></i>
                         <h3 class=" servicios__h3 servicios__h3--verde fw-bold pb-4 d-inline-block ps-3">SEO</h3>
-                        <p class="fs-6">Tu sitio web siempre tiene que tener la mejor optimizacion en los motores de busqueda de Google, eso va a facilitar a tus futuros clientes para poder encontrarte con facilidad, por medio de palabras claves para que tu sitio este bien posicionado en la web.</p>
+                        <p class="fs-6">Your website always has to have the best optimization in Google search engines, this will make it easier for your future clients to be able to find you easily, using keywords so that your site is well positioned on the web.</p>
                     </div>
                 </div>
             </div>
@@ -185,17 +188,18 @@
 
     <main class="proyectos py-5" id="proyectos">
         <div class="container-xl text-center">
-            <h2 class="proyectos__heading mb-5">Mis Proyectos</h2>
-            <p class="pb-5 fs-5">Alguno de los proyectos en los que practico varias de las tecnologias de las que voy adquiriendo conocimiento.</p>
+            <h2 class="proyectos__heading mb-5">My projects</h2>
+            <p class="pb-5 fs-5">Some of the projects in which I practice several of the technologies that I am acquiring knowledge of.</p>
             <div class="row py-5 my-5s justify-content-center mx-auto g-5">
                 <section class="col-12 col-md-5 col-lg-4">
                     <div class="card text-start text-white">
                         <img class="card-img-top proyectos__img" loading="lazy" src="build/img/pagina-sube-desktop.png" alt="imagen proyecto">
                         <div class="card-body p-4">
-                            <h3 class="card-title fs-4 text-primary">Tarjeta SUBE</h3>
-                            <p class="card-text py-3 fw-light">La idea de esta pagina surgio porque vi la pagina del gobierno y saque una idea de realizar solo una pagina original y con la paleta de colores de la SUBE. Las teconologias que se usaron en el proyecto son HTML, CSS, Gulp Js, SASS y JavaScript. </p>
-                            <a href="https://cuchi300.github.io/proyecto-Sube/" class="proyectos__btn btn d-block p-1 rounded-1 fs-6">Ver Proyecto</a>
-                            <a href="https://github.com/cuchi300/proyecto-Sube" class="proyectos__btn btn d-block p-1 mt-2 rounded-1 fs-6">Ver Repositorio</a>
+                            <h3 class="card-title fs-4 text-primary">SUBE card</h3>
+                            <p class="card-text py-3 fw-light">The idea for this page arose because I saw the government's page and got the idea of ​​making just one original page with the SUBE color palette. The technologies that were used in the project are HTML, CSS, Gulp Js, SASS and JavaScript.</p>
+                            <a href="https://cuchi300.github.io/proyecto-Sube/" class="proyectos__btn btn d-block p-1 rounded-1 fs-6">
+                            See Project</a>
+                            <a href="https://github.com/cuchi300/proyecto-Sube" class="proyectos__btn btn d-block p-1 mt-2 rounded-1 fs-6">View Repository</a>
                         </div>
                     </div> <!-- card -->
                 </section>
@@ -203,10 +207,10 @@
                     <div class="card text-start text-white">
                         <img class="card-img-top proyectos__img" loading="lazy" src="build/img/cooking-school.png" alt="imagen proyecto">
                         <div class="card-body p-4">
-                            <h3 class="card-title fs-4 text-primary">Escuela de Cocina</h3>
-                            <p class="card-text py-3 fw-light">El diseño de este proyecto fue extraido de pinterest. Las tecnologias que se implementaron aca fueron HTML, CSS, Gulp JS, NPM, SASS. Tambien la idea de este proyecto es hacerlo totalemente dinamico con PHP y lenguajes de Base de datos como SQL.</p>
-                            <a href="https://cuchi300.github.io/cooking-school/" class="proyectos__btn btn d-block p-1 rounded-1 fs-6">Ver Proyecto</a>
-                            <a href="https://github.com/cuchi300/cooking-school" class="proyectos__btn btn d-block p-1 mt-2 rounded-1 fs-6">Ver Repositorio</a>
+                            <h3 class="card-title fs-4 text-primary">Cooking school</h3>
+                            <p class="card-text py-3 fw-light">The design of this project was taken from pinterest. The technologies that were implemented here were HTML, CSS, Gulp JS, NPM, SASS. Also the idea of ​​this project is to make it totally dynamic with PHP and Database languages ​​like SQL.</p>
+                            <a href="https://cuchi300.github.io/cooking-school/" class="proyectos__btn btn d-block p-1 rounded-1 fs-6">See Project</a>
+                            <a href="https://github.com/cuchi300/cooking-school" class="proyectos__btn btn d-block p-1 mt-2 rounded-1 fs-6">View Repository</a>
                         </div>
                     </div> <!-- card -->
                 </section>
@@ -214,10 +218,10 @@
                     <div class="card text-start text-white">
                         <img class="card-img-top proyectos__img" loading="lazy" src="build/img/muni-web-desktop.png" alt="imagen proyecto">
                         <div class="card-body p-4">
-                            <h3 class="card-title fs-4 text-primary">Municipalidad Jujuy</h3>
-                            <p class="card-text py-3 fw-light">Este proyecto nacio de una idea de realizar de vuelta la pagina original de la Municipalidad de San Salvador de Jujuy que a mi gusto no estaba bien distribuida. Las tecnologias que se implementaron aca fueron HTML, CSS, JavaScript, Gulp JS, NPM, SASS.</p>
-                            <a href="https://cuchi300.github.io/muniweb/" class="proyectos__btn btn d-block p-1 rounded-1 fs-6">Ver Proyecto</a>
-                            <a href="https://github.com/cuchi300/muniweb" class="proyectos__btn btn d-block p-1 mt-2 rounded-1 fs-6">Ver Repositorio</a>
+                            <h3 class="card-title fs-4 text-primary">Jujuy Municipality</h3>
+                            <p class="card-text py-3 fw-light">This project was born from an idea to restore the original page of the Municipality of San Salvador de Jujuy, which to my liking was not well distributed. The technologies that were implemented here were HTML, CSS, JavaScript, Gulp JS, NPM, SASS.</p>
+                            <a href="https://cuchi300.github.io/muniweb/" class="proyectos__btn btn d-block p-1 rounded-1 fs-6">See Project</a>
+                            <a href="https://github.com/cuchi300/muniweb" class="proyectos__btn btn d-block p-1 mt-2 rounded-1 fs-6">View Repository</a>
                         </div>
                     </div> <!-- card -->
                 </section>
@@ -225,10 +229,10 @@
                     <div class="card text-start text-white">
                         <img class="card-img-top proyectos__img" loading="lazy" src="build/img/cafe-pagina.png" alt="imagen proyecto">
                         <div class="card-body p-4">
-                            <h3 class="card-title fs-4 text-primary">Cafeteria</h3>
-                            <p class="card-text py-3 fw-light">Sitio web de cafe, con varias secciones como blog, imagenes y un formulario de contactos, con proyeccion de hacerlo dinamico para poder recibir mensajes de clientes. Las teconologias implementadas aca son HTML, CSS, SASS, Gulp Js, NPM y JavaScript para crear la galeria de imagenes.</p>
-                            <a href="https://cuchi300.github.io/cafeteria-sass/" class="proyectos__btn btn d-block p-1 rounded-1 fs-6">Ver Proyecto</a>
-                            <a href="https://github.com/cuchi300/cafeteria-sass" class="proyectos__btn btn d-block p-1 mt-2 rounded-1 fs-6">Ver Repositorio</a>
+                            <h3 class="card-title fs-4 text-primary">Café</h3>
+                            <p class="card-text py-3 fw-light">Coffee website, with several sections such as blog, images and a contact form, with plans to make it dynamic to receive messages from customers. The technologies implemented here are HTML, CSS, SASS, Gulp Js, NPM and JavaScript to create the image gallery.</p>
+                            <a href="https://cuchi300.github.io/cafeteria-sass/" class="proyectos__btn btn d-block p-1 rounded-1 fs-6">See Project</a>
+                            <a href="https://github.com/cuchi300/cafeteria-sass" class="proyectos__btn btn d-block p-1 mt-2 rounded-1 fs-6">View Repository</a>
                         </div>
                     </div> <!-- card -->
                 </section>
@@ -237,9 +241,9 @@
                         <img class="card-img-top proyectos__img" loading="lazy" src="build/img/techpro-img.png" alt="imagen proyecto">
                         <div class="card-body p-4">
                             <h3 class="card-title fs-4 text-primary">Tech Pro</h3>
-                            <p class="card-text py-3 fw-light">Esta pagina proviene de un curso que realize, donde aprendi varias tecnologias de diseño, la idea es seguir agregando secciones mas adelante como una galeria de auriculares y formularios de contacto. Implementada con HTML, CSS, SASS, NPM, Gulp Js.</p>
-                            <a href="https://cuchi300.github.io/TechPro/" class="proyectos__btn btn d-block p-1 rounded-1 fs-6">Ver Proyecto</a>
-                            <a href="https://github.com/cuchi300/TechPro" class="proyectos__btn btn d-block p-1 mt-2 rounded-1 fs-6">Ver Repositorio</a>
+                            <p class="card-text py-3 fw-light">This page comes from a course I took, where I learned various design technologies, the idea is to continue adding sections later such as a headphone gallery and contact forms. Implemented with HTML, CSS, SASS, NPM, Gulp Js.</p>
+                            <a href="https://cuchi300.github.io/TechPro/" class="proyectos__btn btn d-block p-1 rounded-1 fs-6">See Project</a>
+                            <a href="https://github.com/cuchi300/TechPro" class="proyectos__btn btn d-block p-1 mt-2 rounded-1 fs-6">View Repository</a>
                         </div>
                     </div> <!-- card -->
                 </section>
@@ -248,9 +252,9 @@
                         <img class="card-img-top proyectos__img" loading="lazy" src="build/img/guitar-la.png" alt="imagen proyecto">
                         <div class="card-body p-4">
                             <h3 class="card-title fs-4 text-primary">Guitar LA</h3>
-                            <p class="card-text py-3 fw-light">Es una pagina de guitarras, que tiene como objetivo ser una tienda. Con secciones como modelos de guitarras, blog y formulario de contacto. Esta realizada con HTML, CSS, Bootstrap y JavaScript para las animaciones.</p>
-                            <a href="https://cuchi300.github.io/guitar-bootstrap/" class="proyectos__btn btn d-block p-1 rounded-1 fs-6">Ver Proyecto</a>
-                            <a href="https://github.com/cuchi300/guitar-bootstrap" class="proyectos__btn btn d-block p-1 mt-2 rounded-1 fs-6">Ver Repositorio</a>
+                            <p class="card-text py-3 fw-light">It is a guitar page, which aims to be a store. With sections such as guitar models, blog and contact form. It is made with HTML, CSS, Bootstrap and JavaScript for the animations.</p>
+                            <a href="https://cuchi300.github.io/guitar-bootstrap/" class="proyectos__btn btn d-block p-1 rounded-1 fs-6">See Project</a>
+                            <a href="https://github.com/cuchi300/guitar-bootstrap" class="proyectos__btn btn d-block p-1 mt-2 rounded-1 fs-6">View Repository</a>
                         </div>
                     </div> <!-- card -->
                 </section>
@@ -258,13 +262,13 @@
         </div>
     </main>
 
-    <section class="algo py-5" id="algo">
+    <section class="algo py-5">
         <div class="container-xl text-center">
-            <h2 class="fs-2 fw-bolder algo__heading">Algun Proyecto en mente?</h2>
+            <h2 class="fs-2 fw-bolder algo__heading">Any project in mind?</h2>
             <div class="row py-5">
                     <a href="https://api.whatsapp.com/send?phone=1162173874&text=Hola!%20tengo%20un%20proyecto%20web%20en%20mente..." class="algo__btn btn d-flex align-items-center gap-3 mx-auto d-inline-block w-auto py-2 px-5 mt-5 fs-6 text-uppercase">
                         <i class="fs-4 bi bi-whatsapp"></i>
-                        <span>Dejamelo Saber</span>
+                        <span>Let me know</span>
                     </a>
             </div>
         </div>
@@ -272,7 +276,7 @@
 
     <section class="contacto pt-5 mb-5" id="contacto">
         <div class="container-xl text-center">
-            <h2 class="contacto__heading mb-5">Contacto</h2>
+            <h2 class="contacto__heading mb-5">Contact</h2>
             <div class="row text-white text-start">
                 <div class="col-12 col-md-4 my-5 my-md-0">
                     <h3 class="fs-5 mb-3 text-primary">Info</h3>
@@ -290,7 +294,7 @@
                             +54 9 11-6217-3874
                         </p>
                     </div>
-                    <h3 class="fs-5 text-primary mb-3">Seguime</h3>
+                    <h3 class="fs-5 text-primary mb-3">Follow Me</h3>
                     <nav class="d-flex gap-4">
                         <a href="https://api.whatsapp.com/send?phone=1162173874&text=Hola!%20tengo%20un%20proyecto%20web%20en%20mente..." class="fs-5 text-secondary">
                             <i class="bi bi-whatsapp contacto__link"></i>
@@ -312,29 +316,25 @@
                 <div class="col-12 col-md-8 mt-5 mt-md-0">
                     <form class="formulario">
                         <div class="mb-5">
-                            <label for="nombre" class="form-label text-uppercase mb-3">Nombre:</label>
-                            <input type="text" class="form-control p-4 border-0" id="nombre" placeholder="Escribí tu nombre...">
+                            <label for="nombre" class="form-label text-uppercase mb-3">Name:</label>
+                            <input type="text" class="form-control p-4 border-0" id="nombre" placeholder="Type you'r name...">
                         </div>
                         <div class="row mb-5 flex-column flex-md-row">
                             <div class="col mb-5 mb-md-0">
                                 <label for="email" class="form-label text-uppercase mb-3">Email:</label>
-                                <input type="email" class="form-control p-4 border-0" id="email" placeholder="Escribí tu email...">
+                                <input type="email" class="form-control p-4 border-0" id="email" placeholder="Type you'r email...">
                             </div>
                             <div class="col">
-                                <label for="telefono" class="form-label text-uppercase mb-3">Telefono:</label>
-                                <input type="tel" class="form-control p-4 border-0" id="telefono" placeholder="Escribí tu telefono...">
+                                <label for="telefono" class="form-label text-uppercase mb-3">Phone:</label>
+                                <input type="tel" class="form-control p-4 border-0" id="telefono" placeholder="Type you'r phone number...">
                             </div>
                         </div>
                         <div class="mb-5">
-                            <label for="nombre" class="form-label text-uppercase mb-3">Nombre:</label>
-                            <input type="text" class="form-control p-4 border-0" id="nombre" placeholder="Escribí tu nombre...">
-                        </div>
-                        <div class="mb-5">
-                            <label for="mensaje" class="form-label text-uppercase mb-3">Mensaje:</label>
-                            <textarea class="form-control border-0 p-4" id="mensaje" rows="5" placeholder="Explicame cual es tu proyecto..."></textarea>
+                            <label for="mensaje" class="form-label text-uppercase mb-3">Message:</label>
+                            <textarea class="form-control border-0 p-4" id="mensaje" rows="5" placeholder="Explain to me what your project is..."></textarea>
                         </div>
                         <div class="col-12">
-                            <button type="submit" class="btn formulario__btn py-3 px-6">Enviar</button>
+                            <button type="submit" class="btn formulario__btn py-3 px-6">Send</button>
                         </div>
                     </form>
                 </div>
@@ -348,7 +348,7 @@
                 <h2 class="footer__heading text-primary mb-3 fw-bold">
                     <span>MAB.</span>
                 </h2>
-                <p class="fw-normal">Todo el derecho reservado por el diseñador &copy; Miguel Agustin Baiud</p>
+                <p class="fw-normal">All rights reserved by the designer &copy; Miguel Agustin Baiud</p>
             </div>
         </div>
     </footer>
