@@ -5,6 +5,7 @@ const rename = require('gulp-rename');
 const purgecss = require('gulp-purgecss');
 
 const imagemin = require('gulp-imagemin');
+const webp =  require('gulp-webp');
 
 function css() {
     return src('src/scss/app.scss')
@@ -15,6 +16,15 @@ function css() {
 function imagenes() {
     return src('src/img/**/*')
         .pipe( imagemin({optimizationLevel: 3}))
+        .pipe( dest('build/img') )
+}
+
+function imagenWebp() {
+    const opciones = {
+        quality: 50
+    }
+    return src('src/img/**/*.{jpg,png}')
+        .pipe( webp(opciones))
         .pipe( dest('build/img') )
 }
 
@@ -37,6 +47,7 @@ function dev() {
 
 exports.css = css;
 exports.imagenes = imagenes;
+exports.imagenWebp = imagenWebp;
 exports.dev = dev;
 exports.cssbuild = cssbuild;
-exports.default = series( css, dev);
+exports.default = series(css, dev);

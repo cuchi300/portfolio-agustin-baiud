@@ -51,6 +51,11 @@ p{
     color: $secondary;
     font-weight: 300;
 }
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 // card
 $card-border-color: #484545a1;
 

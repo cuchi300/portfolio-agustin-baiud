@@ -27,7 +27,7 @@
 
     <!-- Stylesheet -->
     <link rel="preload" href="build/css/app.min.css" as="style">
-    <link rel="stylesheet" href="build/css/app.min.css">
+    <link rel="stylesheet" href="build/css/app.css">
 </head>
 <body>
     <header class="header py-4 position-fixed w-100">
@@ -100,8 +100,10 @@
                 <div class="col-12 col-md-5 about__bg text-center pe-md-5 order-2 order-md-0">
                     <h2 class="text-start about__heading z-3 pt-5 mb-5 d-md-block d-none">Acerca de Mi</h2>
                     <figure class="figure pt-5">
-                        <img src="build/img/yo.jpg" class="figure-img img-fluid rounded" loading="lazy" alt="yo trabajando">
-                        <figcaption class="text-white text-md-start pt-3 figure-caption">Yo estudiando en plena pandemia Agosto del 2020</figcaption>
+                        <picture>
+                            <source srcset="build/img/yo.webp" type="image/webp">
+                            <img loading="lazy" src="build/img/yo.jpg" width="500" height="300" alt="imagen yo" class="img-fluid rounded">
+                        </picture>
                     </figure>
                 </div>
                 <div class="col-12 col-md-7 pt-5 mt-5 about__box ps-md-5">
@@ -122,30 +124,54 @@
             <div class="about__skill text-center pb-5 mb-5">
                 <div class="row justify-content-center">
                     <h2 class="about__heading">Mis Habilidades</h2>
-                    <div class="grid my-5">
+                    <div class="grid my-5 py-5">
                         <div class="g-col-6 g-col-md-2 about__icon">
-                            <img src="build/img/html-icon.png" class="img-fluid" alt="imagen icono">
+                            <picture>
+                                <source srcset="build/img/html-icon.webp" type="image/webp">
+                                <img loading="lazy" class="img-fluid w-50 mx-auto" src="build/img/html-icon.png" width="500" height="300" alt="icono">
+                            </picture>
                         </div>
                         <div class="g-col-6 g-col-md-2 about__icon">
-                            <img src="build/img/css-icon.png" class="img-fluid" alt="imagen icono">
+                            <picture>
+                                <source srcset="build/img/css-icon.webp" type="image/webp">
+                                <img loading="lazy" class="img-fluid w-50 mx-auto" src="build/img/css-icon.png" width="500" height="300" alt="icono">
+                            </picture>
                         </div>
                         <div class="g-col-6 g-col-md-2 about__icon">
-                            <img src="build/img/gulp-icon.png" class="img-fluid" alt="imagen icono">
+                            <picture>
+                                <source srcset="build/img/bootstrap-icon.webp" type="image/webp">
+                                <img loading="lazy" class="img-fluid w-50 mx-auto" src="build/img/bootstrap-icon.png" width="500" height="300" alt="icono">
+                            </picture>
                         </div>
                         <div class="g-col-6 g-col-md-2 about__icon">
-                            <img src="build/img/js-icon.png" class="img-fluid" alt="imagen icono">
+                            <picture>
+                                <source srcset="build/img/js-icon.webp" type="image/webp">
+                                <img loading="lazy" class="img-fluid w-50 mx-auto" src="build/img/js-icon.png" width="500" height="300" alt="icono">
+                            </picture>
                         </div>
                         <div class="g-col-6 g-col-md-2 about__icon">
-                            <img src="build/img/npm-icon.png" class="img-fluid" alt="imagen icono">
+                            <picture>
+                                <source srcset="build/img/npm-icon.webp" type="image/webp">
+                                <img loading="lazy" class="img-fluid w-50 mx-auto" src="build/img/npm-icon.png" width="500" height="300" alt="icono">
+                            </picture>
                         </div>
                         <div class="g-col-6 g-col-md-2 about__icon">
-                            <img src="build/img/sass-icon.png" class="img-fluid" alt="imagen icono">
+                            <picture>
+                                <source srcset="build/img/sass-icon.webp" type="image/webp">
+                                <img loading="lazy" class="img-fluid w-50 mx-auto" src="build/img/sass-icon.png" width="500" height="300" alt="icono">
+                            </picture>
                         </div>
                         <div class="g-col-6 g-col-md-2 about__icon g-start-md-5">
-                            <img src="build/img/bootstrap-icon.png" class="img-fluid" alt="imagen icono">
+                            <picture>
+                                <source srcset="build/img/git-icon.webp" type="image/webp">
+                                <img loading="lazy" class="img-fluid w-50 mx-auto" src="build/img/git-icon.png" width="500" height="300" alt="icono">
+                            </picture>
                         </div>
                         <div class="g-col-6 g-col-md-2 about__icon g-start-md-7">
-                            <img src="build/img/git-icon.png" class="img-fluid" alt="imagen icono">
+                            <picture>
+                                <source srcset="build/img/gulp-icon.webp" type="image/webp">
+                                <img loading="lazy" class="img-fluid w-50 mx-auto" src="build/img/gulp-icon.png" width="500" height="300" alt="icono">
+                            </picture>
                         </div>
                     </div>
                 </div>
@@ -193,7 +219,10 @@
             <div class="row py-5 my-5s justify-content-center mx-auto g-5">
                 <section class="col-12 col-md-5 col-lg-4">
                     <div class="card text-start text-white">
-                        <img class="card-img-top proyectos__img" loading="lazy" src="build/img/pagina-sube-desktop.png" alt="imagen proyecto">
+                        <picture>
+                            <source srcset="build/img/pagina-sube-desktop.webp" type="image/webp">
+                            <img loading="lazy" class="card-img-top proyectos__img" src="build/img/pagina-sube-desktop.png" width="500" height="300" alt="imagen proyecto">
+                        </picture>
                         <div class="card-body p-4">
                             <h3 class="card-title fs-4 text-primary">Tarjeta SUBE</h3>
                             <p class="card-text py-3 fw-light">La idea de esta pagina surgio porque vi la pagina del gobierno y saque una idea de realizar solo una pagina original y con la paleta de colores de la SUBE. Las teconologias que se usaron en el proyecto son HTML, CSS, Gulp Js, SASS y JavaScript. </p>
@@ -204,7 +233,10 @@
                 </section>
                 <section class="col-12 col-md-5 col-lg-4">
                     <div class="card text-start text-white">
-                        <img class="card-img-top proyectos__img" loading="lazy" src="build/img/cooking-school.png" alt="imagen proyecto">
+                        <picture>
+                            <source srcset="build/img/cooking-school.webp" type="image/webp">
+                            <img loading="lazy" class="card-img-top proyectos__img" src="build/img/cooking-school.png" width="500" height="300" alt="imagen proyecto">
+                        </picture>
                         <div class="card-body p-4">
                             <h3 class="card-title fs-4 text-primary">Escuela de Cocina</h3>
                             <p class="card-text py-3 fw-light">El diseño de este proyecto fue extraido de pinterest. Las tecnologias que se implementaron aca fueron HTML, CSS, Gulp JS, NPM, SASS. Tambien la idea de este proyecto es hacerlo totalemente dinamico con PHP y lenguajes de Base de datos como SQL.</p>
@@ -215,7 +247,10 @@
                 </section>
                 <section class="col-12 col-md-5 col-lg-4">
                     <div class="card text-start text-white">
-                        <img class="card-img-top proyectos__img" loading="lazy" src="build/img/muni-web-desktop.png" alt="imagen proyecto">
+                        <picture>
+                            <source srcset="build/img/muni-web-desktop.webp" type="image/webp">
+                            <img loading="lazy" class="card-img-top proyectos__img" src="build/img/muni-web-desktop.png" width="500" height="300" alt="imagen proyecto">
+                        </picture>
                         <div class="card-body p-4">
                             <h3 class="card-title fs-4 text-primary">Municipalidad Jujuy</h3>
                             <p class="card-text py-3 fw-light">Este proyecto nacio de una idea de realizar de vuelta la pagina original de la Municipalidad de San Salvador de Jujuy que a mi gusto no estaba bien distribuida. Las tecnologias que se implementaron aca fueron HTML, CSS, JavaScript, Gulp JS, NPM, SASS.</p>
@@ -226,7 +261,10 @@
                 </section>
                 <section class="col-12 col-md-5 col-lg-4">
                     <div class="card text-start text-white">
-                        <img class="card-img-top proyectos__img" loading="lazy" src="build/img/cafe-pagina.png" alt="imagen proyecto">
+                        <picture>
+                            <source srcset="build/img/cafe-pagina.webp" type="image/webp">
+                            <img loading="lazy" class="card-img-top proyectos__img" src="build/img/cafe-pagina.png" width="500" height="300" alt="imagen proyecto">
+                        </picture>
                         <div class="card-body p-4">
                             <h3 class="card-title fs-4 text-primary">Cafeteria</h3>
                             <p class="card-text py-3 fw-light">Sitio web de cafe, con varias secciones como blog, imagenes y un formulario de contactos, con proyeccion de hacerlo dinamico para poder recibir mensajes de clientes. Las teconologias implementadas aca son HTML, CSS, SASS, Gulp Js, NPM y JavaScript para crear la galeria de imagenes.</p>
@@ -237,7 +275,10 @@
                 </section>
                 <section class="col-12 col-md-5 col-lg-4">
                     <div class="card text-start text-white">
-                        <img class="card-img-top proyectos__img" loading="lazy" src="build/img/techpro-img.png" alt="imagen proyecto">
+                        <picture>
+                            <source srcset="build/img/techpro-img.webp" type="image/webp">
+                            <img loading="lazy" class="card-img-top proyectos__img" src="build/img/techpro-img.png" width="500" height="300" alt="imagen proyecto">
+                        </picture>
                         <div class="card-body p-4">
                             <h3 class="card-title fs-4 text-primary">Tech Pro</h3>
                             <p class="card-text py-3 fw-light">Esta pagina proviene de un curso que realize, donde aprendi varias tecnologias de diseño, la idea es seguir agregando secciones mas adelante como una galeria de auriculares y formularios de contacto. Implementada con HTML, CSS, SASS, NPM, Gulp Js.</p>
@@ -248,7 +289,10 @@
                 </section>
                 <section class="col-12 col-md-5 col-lg-4">
                     <div class="card text-start text-white">
-                        <img class="card-img-top proyectos__img" loading="lazy" src="build/img/guitar-la.png" alt="imagen proyecto">
+                        <picture>
+                            <source srcset="build/img/guitar-la.webp" type="image/webp">
+                            <img loading="lazy" class="card-img-top proyectos__img" src="build/img/guitar-la.png" width="500" height="300" alt="imagen proyecto">
+                        </picture>
                         <div class="card-body p-4">
                             <h3 class="card-title fs-4 text-primary">Guitar LA</h3>
                             <p class="card-text py-3 fw-light">Es una pagina de guitarras, que tiene como objetivo ser una tienda. Con secciones como modelos de guitarras, blog y formulario de contacto. Esta realizada con HTML, CSS, Bootstrap y JavaScript para las animaciones.</p>

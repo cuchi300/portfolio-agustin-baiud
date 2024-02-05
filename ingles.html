@@ -22,15 +22,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="preload" href="build/img/yo.jpg" as="image">
-    <link rel="preload" href="build/img/guitar-la.png" as="image">
-    <link rel="preload" href="build/img/cafe-pagina.png" as="image">
-    <link rel="preload" href="build/img/muni-web-desktop.png" as="image">
-    <link rel="preload" href="build/img/pagina-sube-desktop.png" as="image">
-    <link rel="preload" href="build/img/techpro-img.png" as="image">
 
     <!-- Stylesheet -->
     <link rel="preload" href="build/css/app.min.css" as="style">
-    <link rel="stylesheet" href="build/css/app.min.css">
+    <link rel="stylesheet" href="build/css/app.css">
 </head>
 <body>
     <header class="header py-4 position-fixed w-100" id="header">
@@ -103,8 +98,10 @@
                 <div class="col-12 col-md-5 about__bg text-center pe-md-5 order-2 order-md-0">
                     <h2 class="text-start about__heading z-3 pt-5 mb-5 d-md-block d-none">About Me</h2>
                     <figure class="figure pt-5">
-                        <img src="build/img/yo.jpg" class="figure-img img-fluid rounded" loading="lazy" alt="yo trabajando">
-                        <figcaption class="text-white text-md-start pt-3 figure-caption">Me studying in the middle of the pandemic August 2020</figcaption>
+                        <picture>
+                            <source srcset="build/img/yo.webp" type="image/webp">
+                            <img loading="lazy" src="build/img/yo.jpg" width="500" height="300" alt="imagen yo" class="img-fluid rounded">
+                        </picture>
                     </figure>
                 </div>
                 <div class="col-12 col-md-7 pt-5 mt-5 about__box ps-md-5">
@@ -127,28 +124,52 @@
                     <h2 class="about__heading">My Skills</h2>
                     <div class="grid my-5 py-5">
                         <div class="g-col-6 g-col-md-2 about__icon">
-                            <img src="build/img/html-icon.png" class="img-fluid" alt="imagen icono">
+                            <picture>
+                                <source srcset="build/img/html-icon.webp" type="image/webp">
+                                <img loading="lazy" class="img-fluid w-50 mx-auto" src="build/img/html-icon.png" width="500" height="300" alt="icono">
+                            </picture>
                         </div>
                         <div class="g-col-6 g-col-md-2 about__icon">
-                            <img src="build/img/css-icon.png" class="img-fluid" alt="imagen icono">
+                            <picture>
+                                <source srcset="build/img/css-icon.webp" type="image/webp">
+                                <img loading="lazy" class="img-fluid w-50 mx-auto" src="build/img/css-icon.png" width="500" height="300" alt="icono">
+                            </picture>
                         </div>
                         <div class="g-col-6 g-col-md-2 about__icon">
-                            <img src="build/img/gulp-icon.png" class="img-fluid" alt="imagen icono">
+                            <picture>
+                                <source srcset="build/img/bootstrap-icon.webp" type="image/webp">
+                                <img loading="lazy" class="img-fluid w-50 mx-auto" src="build/img/bootstrap-icon.png" width="500" height="300" alt="icono">
+                            </picture>
                         </div>
                         <div class="g-col-6 g-col-md-2 about__icon">
-                            <img src="build/img/js-icon.png" class="img-fluid" alt="imagen icono">
+                            <picture>
+                                <source srcset="build/img/js-icon.webp" type="image/webp">
+                                <img loading="lazy" class="img-fluid w-50 mx-auto" src="build/img/js-icon.png" width="500" height="300" alt="icono">
+                            </picture>
                         </div>
                         <div class="g-col-6 g-col-md-2 about__icon">
-                            <img src="build/img/npm-icon.png" class="img-fluid" alt="imagen icono">
+                            <picture>
+                                <source srcset="build/img/npm-icon.webp" type="image/webp">
+                                <img loading="lazy" class="img-fluid w-50 mx-auto" src="build/img/npm-icon.png" width="500" height="300" alt="icono">
+                            </picture>
                         </div>
                         <div class="g-col-6 g-col-md-2 about__icon">
-                            <img src="build/img/sass-icon.png" class="img-fluid" alt="imagen icono">
+                            <picture>
+                                <source srcset="build/img/sass-icon.webp" type="image/webp">
+                                <img loading="lazy" class="img-fluid w-50 mx-auto" src="build/img/sass-icon.png" width="500" height="300" alt="icono">
+                            </picture>
                         </div>
                         <div class="g-col-6 g-col-md-2 about__icon g-start-md-5">
-                            <img src="build/img/bootstrap-icon.png" class="img-fluid" alt="imagen icono">
+                            <picture>
+                                <source srcset="build/img/git-icon.webp" type="image/webp">
+                                <img loading="lazy" class="img-fluid w-50 mx-auto" src="build/img/git-icon.png" width="500" height="300" alt="icono">
+                            </picture>
                         </div>
                         <div class="g-col-6 g-col-md-2 about__icon g-start-md-7">
-                            <img src="build/img/git-icon.png" class="img-fluid" alt="imagen icono">
+                            <picture>
+                                <source srcset="build/img/gulp-icon.webp" type="image/webp">
+                                <img loading="lazy" class="img-fluid w-50 mx-auto" src="build/img/gulp-icon.png" width="500" height="300" alt="icono">
+                            </picture>
                         </div>
                     </div>
                 </div>
@@ -196,7 +217,10 @@
             <div class="row py-5 my-5s justify-content-center mx-auto g-5">
                 <section class="col-12 col-md-5 col-lg-4">
                     <div class="card text-start text-white">
-                        <img class="card-img-top proyectos__img" loading="lazy" src="build/img/pagina-sube-desktop.png" alt="imagen proyecto">
+                        <picture>
+                            <source srcset="build/img/pagina-sube-desktop.webp" type="image/webp">
+                            <img loading="lazy" class="card-img-top proyectos__img" src="build/img/pagina-sube-desktop.png" width="500" height="300" alt="imagen proyecto">
+                        </picture>
                         <div class="card-body p-4">
                             <h3 class="card-title fs-4 text-primary">SUBE card</h3>
                             <p class="card-text py-3 fw-light">The idea for this page arose because I saw the government's page and got the idea of ​​making just one original page with the SUBE color palette. The technologies that were used in the project are HTML, CSS, Gulp Js, SASS and JavaScript.</p>
@@ -208,7 +232,10 @@
                 </section>
                 <section class="col-12 col-md-5 col-lg-4">
                     <div class="card text-start text-white">
-                        <img class="card-img-top proyectos__img" loading="lazy" src="build/img/cooking-school.png" alt="imagen proyecto">
+                        <picture>
+                            <source srcset="build/img/cooking-school.webp" type="image/webp">
+                            <img loading="lazy" class="card-img-top proyectos__img" src="build/img/cooking-school.png" width="500" height="300" alt="imagen proyecto">
+                        </picture>
                         <div class="card-body p-4">
                             <h3 class="card-title fs-4 text-primary">Cooking school</h3>
                             <p class="card-text py-3 fw-light">The design of this project was taken from pinterest. The technologies that were implemented here were HTML, CSS, Gulp JS, NPM, SASS. Also the idea of ​​this project is to make it totally dynamic with PHP and Database languages ​​like SQL.</p>
@@ -219,7 +246,10 @@
                 </section>
                 <section class="col-12 col-md-5 col-lg-4">
                     <div class="card text-start text-white">
-                        <img class="card-img-top proyectos__img" loading="lazy" src="build/img/muni-web-desktop.png" alt="imagen proyecto">
+                        <picture>
+                            <source srcset="build/img/muni-web-desktop.webp" type="image/webp">
+                            <img loading="lazy" class="card-img-top proyectos__img" src="build/img/muni-web-desktop.png" width="500" height="300" alt="imagen proyecto">
+                        </picture>
                         <div class="card-body p-4">
                             <h3 class="card-title fs-4 text-primary">Jujuy Municipality</h3>
                             <p class="card-text py-3 fw-light">This project was born from an idea to restore the original page of the Municipality of San Salvador de Jujuy, which to my liking was not well distributed. The technologies that were implemented here were HTML, CSS, JavaScript, Gulp JS, NPM, SASS.</p>
@@ -230,7 +260,10 @@
                 </section>
                 <section class="col-12 col-md-5 col-lg-4">
                     <div class="card text-start text-white">
-                        <img class="card-img-top proyectos__img" loading="lazy" src="build/img/cafe-pagina.png" alt="imagen proyecto">
+                        <picture>
+                            <source srcset="build/img/cafe-pagina.webp" type="image/webp">
+                            <img loading="lazy" class="card-img-top proyectos__img" src="build/img/cafe-pagina.png" width="500" height="300" alt="imagen proyecto">
+                        </picture>
                         <div class="card-body p-4">
                             <h3 class="card-title fs-4 text-primary">Café</h3>
                             <p class="card-text py-3 fw-light">Coffee website, with several sections such as blog, images and a contact form, with plans to make it dynamic to receive messages from customers. The technologies implemented here are HTML, CSS, SASS, Gulp Js, NPM and JavaScript to create the image gallery.</p>
@@ -241,7 +274,10 @@
                 </section>
                 <section class="col-12 col-md-5 col-lg-4">
                     <div class="card text-start text-white">
-                        <img class="card-img-top proyectos__img" loading="lazy" src="build/img/techpro-img.png" alt="imagen proyecto">
+                        <picture>
+                            <source srcset="build/img/techpro-img.webp" type="image/webp">
+                            <img loading="lazy" class="card-img-top proyectos__img" src="build/img/techpro-img.png" width="500" height="300" alt="imagen proyecto">
+                        </picture>
                         <div class="card-body p-4">
                             <h3 class="card-title fs-4 text-primary">Tech Pro</h3>
                             <p class="card-text py-3 fw-light">This page comes from a course I took, where I learned various design technologies, the idea is to continue adding sections later such as a headphone gallery and contact forms. Implemented with HTML, CSS, SASS, NPM, Gulp Js.</p>
@@ -252,7 +288,10 @@
                 </section>
                 <section class="col-12 col-md-5 col-lg-4">
                     <div class="card text-start text-white">
-                        <img class="card-img-top proyectos__img" loading="lazy" src="build/img/guitar-la.png" alt="imagen proyecto">
+                        <picture>
+                            <source srcset="build/img/guitar-la.webp" type="image/webp">
+                            <img loading="lazy" class="card-img-top proyectos__img" src="build/img/guitar-la.png" width="500" height="300" alt="imagen proyecto">
+                        </picture>
                         <div class="card-body p-4">
                             <h3 class="card-title fs-4 text-primary">Guitar LA</h3>
                             <p class="card-text py-3 fw-light">It is a guitar page, which aims to be a store. With sections such as guitar models, blog and contact form. It is made with HTML, CSS, Bootstrap and JavaScript for the animations.</p>

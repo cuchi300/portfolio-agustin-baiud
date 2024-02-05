@@ -8,6 +8,12 @@ p {
   font-weight: 300;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /*!
  * Bootstrap  v5.3.2 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
@@ -495,16 +501,6 @@ summary {
 
 .figure {
   display: inline-block;
-}
-
-.figure-img {
-  margin-bottom: 0.5rem;
-  line-height: 1;
-}
-
-.figure-caption {
-  font-size: 0.875em;
-  color: var(--bs-secondary-color);
 }
 
 .container,
@@ -1890,6 +1886,10 @@ textarea.form-control {
   border: 0 !important;
 }
 
+.w-50 {
+  width: 50% !important;
+}
+
 .w-75 {
   width: 75% !important;
 }
@@ -2003,10 +2003,6 @@ textarea.form-control {
 .py-5 {
   padding-top: 3rem !important;
   padding-bottom: 3rem !important;
-}
-
-.pt-3 {
-  padding-top: 1rem !important;
 }
 
 .pt-5 {
@@ -2162,9 +2158,6 @@ textarea.form-control {
   .ps-md-5 {
     padding-left: 3rem !important;
   }
-  .text-md-start {
-    text-align: left !important;
-  }
 }
 @media (min-width: 1200px) {
   .fs-2 {
@@ -2310,7 +2303,6 @@ textarea.form-control {
 }
 .hero__imagen {
   background-image: url(../img/yo-traje.jpg);
-  background-size: cover;
   background-position: -14rem -9rem;
   background-size: 193%;
   background-repeat: no-repeat;
