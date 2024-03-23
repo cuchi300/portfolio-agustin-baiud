@@ -21,11 +21,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const spinner = document.querySelector('#spinner');
 
-    inputNombre.addEventListener('blur', validar);
-    inputEmail.addEventListener('blur', validar);
-    inputTelefono.addEventListener('blur', validar);
-    inputConsulta.addEventListener('blur', validar);
-    inputMensaje.addEventListener('blur', validar);
+    inputNombre.addEventListener('input', validar);
+    inputEmail.addEventListener('input', validar);
+    inputTelefono.addEventListener('input', validar);
+    inputConsulta.addEventListener('input', validar);
+    inputMensaje.addEventListener('input', validar);
 
     formulario.addEventListener('submit', enviarEmail);
 
