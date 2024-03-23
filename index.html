@@ -26,8 +26,8 @@
     <link rel="preload" href="build/img/techpro-img.png" as="image">
 
     <!-- Stylesheet -->
-    <link rel="preload" href="build/css/app.min.css" as="style">
-    <link rel="stylesheet" href="build/css/app.min.css">
+    <link rel="preload" href="build/css/app.css" as="style">
+    <link rel="stylesheet" href="build/css/app.css">
 </head>
 <body>
     <header class="header py-4 position-fixed w-100">
@@ -248,14 +248,13 @@
                 <section class="col-12 col-md-5 col-lg-4">
                     <div class="card text-start text-white">
                         <picture>
-                            <source srcset="build/img/muni-web-desktop.webp" type="image/webp">
-                            <img loading="lazy" class="card-img-top proyectos__img" src="build/img/muni-web-desktop.png" width="500" height="300" alt="imagen proyecto">
+                            <source srcset="build/img/gymfitness-imagen.webp" type="image/webp">
+                            <img loading="lazy" class="card-img-top proyectos__img" src="build/img/gymfitness-imagen.png" width="500" height="300" alt="imagen proyecto">
                         </picture>
                         <div class="card-body p-4">
-                            <h3 class="card-title fs-4 text-primary">Municipalidad Jujuy</h3>
-                            <p class="card-text py-3 fw-light">Este proyecto nacio de una idea de realizar de vuelta la pagina original de la Municipalidad de San Salvador de Jujuy que a mi gusto no estaba bien distribuida. Las tecnologias que se implementaron aca fueron HTML, CSS, JavaScript, Gulp JS, NPM, SASS.</p>
-                            <a href="https://cuchi300.github.io/muniweb/" class="proyectos__btn btn d-block p-1 rounded-1 fs-6">Ver Proyecto</a>
-                            <a href="https://github.com/cuchi300/muniweb" class="proyectos__btn btn d-block p-1 mt-2 rounded-1 fs-6">Ver Repositorio</a>
+                            <h3 class="card-title fs-4 text-primary">GymFitness</h3>
+                            <p class="card-text py-3 fw-light">Proyecto realizado con curso de Temas y Plugins de WordPress, excelente proyecto de gimnasio integrado con PHP, JavaScript, HTML y CSS. Base de datos completa</p>
+                            <a href="https://diynoso.nyc.dom.my.id/" class="proyectos__btn btn d-block p-1 rounded-1 fs-6">Ver Proyecto</a>
                         </div>
                     </div> <!-- card -->
                 </section>
@@ -311,7 +310,7 @@
             <div class="row py-5">
                     <a href="https://api.whatsapp.com/send?phone=1162173874&text=Hola!%20tengo%20un%20proyecto%20web%20en%20mente..." class="algo__btn btn d-flex align-items-center gap-3 mx-auto d-inline-block w-auto py-2 px-5 mt-5 fs-6 text-uppercase">
                         <i class="fs-4 bi bi-whatsapp"></i>
-                        <span>Dejamelo Saber</span>
+                        <span>Contactame</span>
                     </a>
             </div>
         </div>
@@ -357,24 +356,25 @@
                     </nav>
                 </div>
                 <div class="col-12 col-md-8 mt-5 mt-md-0">
-                    <form class="formulario">
+                    <!-- FORMULARIO -->
+                    <form class="formulario"  id="formulario">
                         <div class="mb-5">
                             <label for="nombre" class="form-label text-uppercase mb-3">Nombre:</label>
-                            <input type="text" class="form-control p-4 border-0" id="nombre" placeholder="Escribí tu nombre...">
+                            <input type="text" name="nombre" class="form-control p-4 border-0" id="nombre" placeholder="Escribí tu nombre...">
                         </div>
                         <div class="row mb-5 flex-column flex-md-row">
                             <div class="col mb-5 mb-md-0">
                                 <label for="email" class="form-label text-uppercase mb-3">Email:</label>
-                                <input type="email" class="form-control p-4 border-0" id="email" placeholder="Escribí tu email...">
+                                <input type="email" name="email" class="form-control p-4 border-0" id="email" placeholder="Escribí tu email...">
                             </div>
                             <div class="col">
                                 <label for="telefono" class="form-label text-uppercase mb-3">Telefono:</label>
-                                <input type="tel" class="form-control p-4 border-0" id="telefono" placeholder="Escribí tu telefono...">
+                                <input type="tel" name="telefono" class="form-control p-4 border-0" id="telefono" placeholder="Escribí tu telefono...">
                             </div>
                         </div>
                         <div class="mb-5">
                             <label for="consulta" class="form-label text-uppercase mb-3">Consulta sobre:</label>
-                            <select class="form-control border-0 p-4" id="consulta">
+                            <select class="form-control border-0 p-4" name="consulta" id="consulta">
                                 <option value="">--Selecciona--</option>
                                 <option value="Proyecto">Proyecto</option>
                                 <option value="Precios">Precios</option>
@@ -382,12 +382,43 @@
                         </div>
                         <div class="mb-5">
                             <label for="mensaje" class="form-label text-uppercase mb-3">Mensaje:</label>
-                            <textarea class="form-control border-0 p-4" id="mensaje" rows="5" placeholder="Explicame cual es tu proyecto..."></textarea>
+                            <textarea class="form-control border-0 p-4" name="mensaje" id="mensaje" rows="5" placeholder="Explicame cual es tu proyecto..."></textarea>
                         </div>
-                        <div class="col-12">
-                            <button aria-label="Button submit" type="submit" class="btn formulario__btn py-3 px-6">Enviar</button>
+                        <div class="col-12" id="botones">
+
+                            <button aria-label="Button submit" type="submit" class="btn formulario__btn opacity-25 py-3 px-6" disabled>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
+                                </svg>
+                                Enviar
+                            </button>
+
+                            <button aria-label="Button submit" type="reset" class="btn formulario__btn py-3 px-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
+                                </svg>
+                                Resetear
+                            </button>
+                        </div><!-- botones -->
+                    </form> <!-- termina formulario -->
+
+                    <div id="spinner" class="text-center visually-hidden d-flex">
+                        <div class="sk-circle">
+                            <div class="sk-circle1 sk-child"></div>
+                            <div class="sk-circle2 sk-child"></div>
+                            <div class="sk-circle3 sk-child"></div>
+                            <div class="sk-circle4 sk-child"></div>
+                            <div class="sk-circle5 sk-child"></div>
+                            <div class="sk-circle6 sk-child"></div>
+                            <div class="sk-circle7 sk-child"></div>
+                            <div class="sk-circle8 sk-child"></div>
+                            <div class="sk-circle9 sk-child"></div>
+                            <div class="sk-circle10 sk-child"></div>
+                            <div class="sk-circle11 sk-child"></div>
+                            <div class="sk-circle12 sk-child"></div>
                         </div>
-                    </form>
+                    </div>
+
                 </div>
             </div> <!-- row -->
         </div><!-- container -->
@@ -406,6 +437,7 @@
 
     <script src="js/bootstrap.bundle.min.js" async></script>
 
+    <script src="js/app.js"></script>
     <script src="js/efectos.js" async></script>
     <script src="js/scroll.js" async></script>
 </body>

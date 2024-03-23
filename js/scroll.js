@@ -1,4 +1,4 @@
-window.addEventListener('scroll', () =>{
+document.addEventListener('scroll', () =>{
     bgMenuNegro();
     scrollEsconder();
 })

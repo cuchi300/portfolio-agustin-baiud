@@ -18,5 +18,9 @@
 .formulario{
     &__btn{
         @include m.btnOutline;
+
+        svg{
+            width: 2rem;
+        }
     }
 }

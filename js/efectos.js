@@ -7,7 +7,7 @@ servicioBox.forEach((box) => {
     box.addEventListener('mousemove', (e) => {
         //tomamos cordenadas del raton
         const {layerX, layerY} = e;
-        // calculo para saber la rotacion que tiene que hacer vertica y horizontalmente
+        // calculo para saber la rotacion que tiene que hacer vertical y horizontalmente
         const yRotation = (
             (layerX - width / 2) / width
         ) * 20;

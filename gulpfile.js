@@ -34,7 +34,7 @@ function cssbuild() {
             suffix: '.min'
         }))
         .pipe( purgecss({
-            content: ['index.html', 'js/scroll.js', 'js/efectos.js', 'js/bootstrap.bundle.min.js'],
+            content: ['index.html', 'js/scroll.js', 'js/app.js' ,'js/efectos.js', 'js/bootstrap.bundle.min.js'],
         }))
         .pipe( dest('build/css') )
 }
